@@ -35,8 +35,9 @@ Select Use case Command Line Interface CLI, check "I understand the above recomm
 
 ![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/fdaf9936-2543-41c0-9fcc-1c7c73adcac6)
 
+We input the description tag and press the Create access key button 
 
-
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/3c7a2777-ddc5-4726-a89d-1fb378e2eddf)
 
 
 ## 4. 
