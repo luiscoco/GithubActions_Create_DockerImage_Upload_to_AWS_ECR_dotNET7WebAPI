@@ -1,10 +1,22 @@
-# dotnet7WebAPI
+# GithubActions: How to create .NET 7 Web API Docker image and Upload it to AWS ECS Elastic Container Service
 
 
-## 1. 
+## 1. Create a .NET 7 Web API application in Visual Studio
 
 
 ## 2. Create a AWS ECR Public repo for storing the Docker image
+
+Navigate to the AWS ECR service and create a new Public repo
+
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/3161dc5d-4c1e-4c96-ad2b-7c254a2214b9)
+
+We set the repository name, and the container compatible operating system and architecture
+
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/e5aa8759-8a27-4deb-b8ae-dcbca4a7f40b)
+
+We press the **Create repository** button
+
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/184c1aae-d741-43f4-91e6-69bf1b923ff7)
 
  
 ## 3. Create the Github Secrets to store the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
