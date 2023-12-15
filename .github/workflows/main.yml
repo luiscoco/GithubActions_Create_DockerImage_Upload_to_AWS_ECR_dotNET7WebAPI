@@ -28,6 +28,12 @@ jobs:
     - name: Login to Amazon ECR
       run: |
         aws ecr-public get-login-password --region ${{ env.AWS_REGION }} | docker login --username AWS --password-stdin ${{ env.ECR_REGISTRY }}
+
+    # New step to delete existing images
+    - name: Delete existing images in ECR repository
+      run: |
+        aws ecr-public describe-images --repository-name ${{ env.IMAGE_NAME }} --region ${{ env.AWS_REGION }} --output=json | jq -r '.imageDetails[].imageDigest' | xargs -I {} aws ecr-public batch-delete-image --repository-name ${{ env.IMAGE_NAME }} --image-ids imageDigest={} --region ${{ env.AWS_REGION }}
+    
     - name: Build, tag, and push image to Amazon ECR
       run: |
         docker build -t ${{ env.ECR_REGISTRY }}/${{ env.IMAGE_NAME }}:latest .
