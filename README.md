@@ -108,6 +108,44 @@ We create a **ECS Cluster**:
 aws ecs create-cluster --cluster-name myCluster
 ```
 
+Create a new file task-definition.json and place it in a local folder: **C:/AWS Task Definition/task-definition.json**
+
+This is the **task-definition.json** file source code
+
+```json
+{
+    "family": "myDotnetApp",
+    "executionRoleArn": "arn:aws:iam::550146943653:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+        {
+            "name": "dotnet8webapi",
+            "image": "public.ecr.aws/x6y4g2f4/dotnet8webapirepo:latest",
+            "cpu": 1024,
+            "memory": 3072,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80
+                }
+            ],
+            "environment": [
+                {
+                    "name": "ASPNETCORE_ENVIRONMENT",
+                    "value": "Development"
+                }
+            ]
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "1024",
+    "memory": "3072"
+}
+```
+
 We create a new **Task Definition**:
 
 ```
