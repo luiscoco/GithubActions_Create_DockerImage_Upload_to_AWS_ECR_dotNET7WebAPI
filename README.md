@@ -3,7 +3,12 @@
 ## 1. Create a .NET 7 Web API application in Visual Studio
 
 
-## 2. Create a AWS ECR Public repo for storing the Docker image
+## 2. Upload your .NET 7 Web API to a Github repo 
+
+
+
+
+## 3. Create a AWS ECR Public repo for storing the Docker image
 
 Navigate to the AWS ECR service and create a new Public repo
 
@@ -23,24 +28,33 @@ See the new repo in the list
  
 ## 3. Create the Github Secrets to store the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
 
-We selec the Security Credentials option in the top right menu
+We start this section in **AWS** creating an access key and a secret key 
+
+We select the **Security Credentials** option in the top right menu
 
 ![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/f93c0820-4244-41d3-b7d0-cdb95b903fc9)
 
-We click on the Create access key button
+We click on the **Create access key** button
 
 ![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/c9955848-528b-4026-83b9-be9a49bd028a)
 
-Select Use case Command Line Interface CLI, check "I understand the above recommendation and want to proceed to create an access key." and press Next button
+Select Use case **Command Line Interface CLI**, check "I understand the above recommendation and want to proceed to create an access key." and press Next button
 
 ![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/fdaf9936-2543-41c0-9fcc-1c7c73adcac6)
 
-We input the description tag and press the Create access key button 
+We input the description tag and press the **Create access** key button 
 
 ![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/3c7a2777-ddc5-4726-a89d-1fb378e2eddf)
 
+We click on the **Download .csv file** and and Excel file will be donwloaded to our laptop with the access key and secret key
 
-## 4. 
+Go to you **Github repo** and create two secrets for stroing the access key and secret key
+
+
+
+## 4. Create t
+
+Click in
 
 This is the **main.yml** file for executing the github action workflow to create a .NET 8 Web API Docker image and upload it to AWS ECR 
 
