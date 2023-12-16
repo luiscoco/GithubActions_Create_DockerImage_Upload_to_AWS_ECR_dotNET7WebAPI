@@ -2,7 +2,7 @@ name: Build and Push Docker Image
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 env:
   ECR_REGISTRY: public.ecr.aws/x6y4g2f4  # Your AWS ECR Registry
