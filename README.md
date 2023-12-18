@@ -26,7 +26,7 @@ See the new repo in the list
 
 ![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/387fdd4d-9c94-48cb-903c-3aaed49bcaef)
  
-## 3. Create the Github Secrets to store the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+## 4. Create the Github Secrets to store the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
 
 We start this section in **AWS** creating an access key and a secret key 
 
@@ -50,13 +50,9 @@ We click on the **Download .csv file** and and Excel file will be donwloaded to 
 
 Go to you **Github repo** and create two secrets for stroing the access key and secret key
 
+## 5. Create the Github actions workflow
 
-
-## 4. Create t
-
-Click in
-
-This is the **main.yml** file for executing the github action workflow to create a .NET 8 Web API Docker image and upload it to AWS ECR 
+This is the **main.yml** file for executing the github action workflow to create a .NET 7 Web API Docker image and upload it to AWS ECR 
 
 ```yaml
 name: Build and Push Docker Image
@@ -100,7 +96,7 @@ jobs:
         docker push ${{ env.ECR_REGISTRY }}/${{ env.IMAGE_NAME }}:latest
 ```
 
-## 5. How deploy to AWS ECS the Docker image stored in my ECR repo 
+## 6. How deploy to AWS ECS the Docker image stored in my ECR repo 
 
 We create a **ECS Cluster**:
 
@@ -176,7 +172,9 @@ aws ec2 describe-security-groups --filters "Name=vpc-id,Values=vpc-07d51d92f7335
 
 For example the Security Group output is: **sg-051b9197846af4fe0**
 
-We create a new **Service**:
+We create a new **Service** with the "aws ecs create-service" command 
+
+Do not forget to set the **subnetId** and the **securityGroupId**
 
 ```
 aws ecs create-service --cluster myCluster --service-name myDotnetService --task-definition myDotnetApp --launch-type FARGATE --desired-count 1 --network-configuration "awsvpcConfiguration={subnets=[subnet-0df35048d0d30e90f],securityGroups=[sg-051b9197846af4fe0],assignPublicIp=ENABLED}"
