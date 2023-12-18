@@ -72,6 +72,16 @@ We click on the **Download .csv file** and and Excel file will be donwloaded to 
 
 Go to you **Github repo** and create two secrets for stroing the access key and secret key
 
+Press the **Settings** button
+
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/e56b4f46-e10f-4e8d-90ef-0b43219c825b)
+
+We select **Secrets and variables** and we store **AWS_ACCESS_KEY_ID** and **AWS_SECRET_ACCESS_KEY** in two github repository secrets
+
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/42cda001-e27d-4194-b40a-2f548324f9b3)
+
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/9e3dc39e-d534-45a6-b29d-f401a53f5eb6)
+
 ## 5. Create the Github actions workflow
 
 In the application Github repo click on the **Actions** button
