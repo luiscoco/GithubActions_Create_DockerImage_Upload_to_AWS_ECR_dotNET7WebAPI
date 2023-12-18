@@ -28,7 +28,7 @@ We select the project main options: .NET 7 framework, enable Docker, configure H
 
 ![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/21543565-2415-49c0-862d-dd74f686d831)
 
-
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/5d90dfd4-b90c-41ab-a2a0-eff5516aaa77)
 
 ## 3. Create a AWS ECR Public repo for storing the Docker image
 
