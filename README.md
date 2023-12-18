@@ -71,7 +71,11 @@ Go to you **Github repo** and create two secrets for stroing the access key and 
 
 ## 5. Create the Github actions workflow
 
-This is the **main.yml** file for executing the github action workflow to create a .NET 7 Web API Docker image and upload it to AWS ECR 
+In the application Github repo click on the **Actions** button
+
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/2afe59ba-5088-4ebd-88b5-1840b0f30416)
+
+We input the **main.yml** file for executing the github action workflow to create a .NET 7 Web API Docker image and upload it to AWS ECR 
 
 ```yaml
 name: Build and Push Docker Image
@@ -114,6 +118,8 @@ jobs:
         docker build -t ${{ env.ECR_REGISTRY }}/${{ env.IMAGE_NAME }}:latest .
         docker push ${{ env.ECR_REGISTRY }}/${{ env.IMAGE_NAME }}:latest
 ```
+
+We press "**Commit changes...**" button
 
 ## 6. How deploy to AWS ECS the Docker image stored in my ECR repo 
 
