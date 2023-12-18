@@ -16,7 +16,7 @@ We select the projec template "ASP.NET Core Web API"
 
 We set the project name and location
 
-![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/88ba1ee2-eb8b-4d8c-b842-104dfa37ca66)
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/810afcd7-7ce4-46a0-9656-b2349464ea9b)
 
 We select the project main options: .NET 7 framework, enable Docker, configure HTTPS, use OpenAPI and user controllers
 
@@ -24,6 +24,9 @@ We select the project main options: .NET 7 framework, enable Docker, configure H
 
 ## 2. Upload your .NET 7 Web API to a Github repo 
 
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/2f55c5b8-8bb5-427c-b17b-fb61caf7411b)
+
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/21543565-2415-49c0-862d-dd74f686d831)
 
 
 
