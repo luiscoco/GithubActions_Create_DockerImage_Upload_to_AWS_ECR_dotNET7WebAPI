@@ -2,6 +2,25 @@
 
 ## 1. Create a .NET 7 Web API application in Visual Studio
 
+We run Visual Studio 2022
+
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/6fe14492-2f95-4534-8d8b-72f441b1087f)
+
+We create a new project 
+
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/54d18326-747c-45ee-a2d2-14957383cd3b)
+
+We select the projec template "ASP.NET Core Web API"
+
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/3b1197cb-1d82-40ea-9e9c-2fba59f55b20)
+
+We set the project name and location
+
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/88ba1ee2-eb8b-4d8c-b842-104dfa37ca66)
+
+We select the project main options: .NET 7 framework, enable Docker, configure HTTPS, use OpenAPI and user controllers
+
+![image](https://github.com/luiscoco/GithubActions_Create_DockerImage_Upload_to_AWS_ECR_dotNET7WebAPI/assets/32194879/992695dc-64da-4e29-9996-6552752da6d1)
 
 ## 2. Upload your .NET 7 Web API to a Github repo 
 
